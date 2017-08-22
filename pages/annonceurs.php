@@ -31,5 +31,5 @@ $donnees['last_name'];
 </p>
     <?php
 }
-$reponse->closeCursor();
+
 ?>

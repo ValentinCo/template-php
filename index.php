@@ -18,5 +18,5 @@ if($p === 'rubriques'){
     include('./pages/rubriques.php');
 }
 $content = ob_get_clean();
-include('./pages/templates/default.php');
+include('./pages/template/default.php');
 ?>

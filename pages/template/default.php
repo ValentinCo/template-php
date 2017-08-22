@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <?php include('header.php'); ?>
+    <?php include(__DIR__.'/header.php'); ?>
     <?= $content ?>
     </h1>Footer</h1>
 </body>
