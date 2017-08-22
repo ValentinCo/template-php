@@ -5,9 +5,10 @@
     
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="annonceurs.php">Liste Annonceurs</a></li>
-      <li><a href="rubriques.php">Liste Rubriques</a></li>
-      <li><a href="annonces.php">Liste Annonces</a></li>
+      <li><a href="?p=annonceurs">Liste Annonceurs</a></li>
+      <li><a href="?p=rubriques">Liste Rubriques</a></li>
+      <li><a href="?p=annonces">Liste Annonces</a></li>
+      <li><a href="?p=home">home</a></li>
 
     </ul>
 

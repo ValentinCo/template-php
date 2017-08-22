@@ -13,9 +13,7 @@ catch (Exception $e)
         die('Erreur : ' . $e->getMessage());
 }
 ?>
-<?php
-include ("template/default.php")
-?>
+
 
 <?php
 $reponse = $bdd->query('SELECT * FROM adverts');

@@ -14,9 +14,7 @@ catch (Exception $e)
 }
 ?>
 
-<?php
-include ("template/default.php")
-?>
+
 
 <?php
 $reponse = $bdd->query('SELECT * FROM users');
