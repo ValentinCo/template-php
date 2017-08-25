@@ -17,15 +17,38 @@ catch (Exception $e)
 
 
 <?php
-$reponse = $bdd->query('SELECT * FROM users');
+$reponse = $bdd->query('SELECT * FROM uti_utilisateur');
 ?>
+
+<div class="container">
+         
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>N°</th>
+        <th>Prenom</th>
+        <th>Nom</th>
+        <th>Age</th>
+
+        
+      </tr>
+    </thead>
+
+
 <?php
 while  ($donnees = $reponse->fetch()){
 ?>
 <p>
-    <strong>Annonceur</strong> : <?php echo $donnees['first_name'] . " ",
-$donnees['last_name'];
-?>
+<td><?=$donnees['uti_oid']?> </td>
+<td><?=$donnees['uti_prenom']?> </td>
+<td><?=$donnees['uti_nom'];?> </td>
+<td><?=$donnees['uti_age']. " ans";?> </td>
+</tr>
+</tbody>
+
+</div>
+</p>
+
 </p>
     <?php
 }

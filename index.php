@@ -17,6 +17,12 @@ if($p === 'annonces'){
 if($p === 'rubriques'){
     include('./pages/rubriques.php');
 }
+if($p === 'recherche'){
+    include('./pages/affiche.php');
+}
+if($p === 'inscription'){
+    include('./pages/inscription.php');
+}
 $content = ob_get_clean();
 include('./pages/template/default.php');
 ?>
