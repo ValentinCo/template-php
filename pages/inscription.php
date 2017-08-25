@@ -13,10 +13,18 @@ catch (Exception $e)
 ?>
 
 <?php
-$prenom = $_POST['prenom'];
-$nom = $_POST['nom'];
-$age = $_POST['age'];
+$prenom = htmlspecialchars($_POST['prenom']);
+$nom = htmlspecialchars($_POST['nom']);
+$age = htmlspecialchars($_POST['age']);
 
-$bdd->query('INSERT INTO uti_utilisateur (uti_prenom, uti_nom, uti_age) 
+// $bdd->query('INSERT INTO uti_utilisateur (uti_prenom, uti_nom, uti_age) 
+// VALUES ("'.$prenom.'","'.$nom.'","'.$age.'")');
+
+$sql = sprintf('INSERT INTO uti_utilisateur (uti_prenom, uti_nom, uti_age) 
 VALUES ("'.$prenom.'","'.$nom.'","'.$age.'")');
+
+$reponse = $bdd->query($sql);
+
 ?>
+
+<h3>Vous êtes inscrit</h3>

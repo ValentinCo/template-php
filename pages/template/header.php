@@ -10,6 +10,16 @@
       <li><a href="?p=rubriques">Liste Rubriques</a></li>
       <li><a href="?p=annonces">Liste Annonces</a></li>
       <li><a href="?p=recherche">Recherche</a></li>
+      <li>
+      <form method="GET" action="pages/recherche.php" class="navbar-form" role="search">
+        <div class="input-group">
+            <input name="search" type="text" class="form-control" placeholder="Search">
+            <div class="input-group-btn">
+                <button  class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+        </form>
+        </li>
     </ul>
 </nav>
 
