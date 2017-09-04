@@ -41,6 +41,30 @@ data-target="#exampleModal" data-whatever="@mdo">Inscription</button>
             <label for="age" class="form-control-label">Age:</label>
             <input name="age" type="number" class="form-control" id="age" required>
           </div>
+          <div class="form-group">
+            <label for="pseudo" class="form-control-label">Pseudo:</label>
+            <input name="pseudo" type="text" class="form-control" id="pseudo" required>
+          </div>
+          <div class="form-group">
+    <label for="inputEmail" class="control-label">Email</label>
+    <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+    <div class="help-block with-errors"></div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword" class="control-label">Password</label>
+    <div class="form-inline row">
+      <div class="form-group col-sm-6">
+        <input name="password1" type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+        <div class="help-block">Minimum of 6 characters</div>
+      </div>
+      <div class="form-group col-sm-6">
+        <input name="password2" type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+        <div class="help-block with-errors"></div>
+      </div>
+    </div>
+  </div>
+
+          
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
