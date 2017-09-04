@@ -29,6 +29,8 @@ $reponse = $bdd->query('SELECT * FROM uti_utilisateur');
         <th>Prenom</th>
         <th>Nom</th>
         <th>Age</th>
+        <th>E-mail</th>
+        <th>Pseudo</th>
 
         
       </tr>
@@ -41,8 +43,10 @@ while  ($donnees = $reponse->fetch()){
 <p>
 <td><?=$donnees['uti_oid']?> </td>
 <td><?=$donnees['uti_prenom']?> </td>
-<td><?=$donnees['uti_nom'];?> </td>
+<td><?=$donnees['uti_nom']?> </td>
 <td><?=$donnees['uti_age']. " ans";?> </td>
+<td><?=$donnees['uti_email']?> </td>
+<td><?=$donnees['uti_pseudo']?> </td>
 </tr>
 </tbody>
 

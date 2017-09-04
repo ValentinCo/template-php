@@ -54,11 +54,11 @@ data-target="#exampleModal" data-whatever="@mdo">Inscription</button>
     <label for="inputPassword" class="control-label">Password</label>
     <div class="form-inline row">
       <div class="form-group col-sm-6">
-        <input name="password1" type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
-        <div class="help-block">Minimum of 6 characters</div>
+        <input name="password1" type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Mot de passe" required>
+        <div class="help-block">Minimum 8 caractères</div>
       </div>
       <div class="form-group col-sm-6">
-        <input name="password2" type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+        <input name="password2" type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirmation" required>
         <div class="help-block with-errors"></div>
       </div>
     </div>
